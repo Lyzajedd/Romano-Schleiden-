@@ -1,0 +1,28 @@
+import turtle
+
+# Set up the screen
+screen = turtle.Screen()
+screen.bgcolor("white")
+
+# Set up the turtle 
+pen = turtle.Turtle()
+pen.shape("turtle")
+pen.color("purple")
+pen.speed(3)
+
+# Move the turtle to start position
+pen.begin_fill()
+
+# Draw the triangle shape
+pen.left(50)
+pen.forward(133)
+pen.circle(50, 200)
+pen.right(140)
+pen.circle(50, 200)
+pen.forward(133)
+
+pen.end_fill()
+
+# Hide the turtle and display the result
+pen.hideturtle()
+turtle.done()
